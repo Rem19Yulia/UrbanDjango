@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from django.views.generic import TempLateView
-# Create your views here.
+   from django.views import View
 
-def index(request):
-  return render(request, 'class_template.html')
+   class ClassView(View):
+       def get(self, request):
+           return render(request, 'second_task/class_view.html')
 
-class index2(TempLateView):
-  template_name = "func_template.html"
+   def function_view(request):
+       return render(request, 'second_task/function_view.html')
+
