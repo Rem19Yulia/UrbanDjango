@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles', 
     'UrbanDjango',
+    'example1', 
+    'example2', 
+    'example3', 
     'task2',
 ]
 
